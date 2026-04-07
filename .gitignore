@@ -6,6 +6,15 @@ __pycache__/
 # C extensions
 *.so
 
+# CUDA / C++ local builds (nvcc, gcc)
+# Prefer outputs under build/ (already listed below) or bin/: nvcc foo.cu -o build/foo
+*.o
+*.obj
+a.out
+*.cubin
+*.fatbin
+bin/
+
 # Distribution / packaging
 .Python
 build/
